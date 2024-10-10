@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Mobile Application</title>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="screen-1">
+        <img class="logo" src="https://cdn.glitch.global/ea41262a-2179-490a-b9fb-e52008c54d2c/Img2.jpeg?v=1728494511363" alt="Logotipo" />
+
+        <div class="email">
+            <label for="email">Email Usuario</label>
+            <div class="sec-2">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" id="email" placeholder="Usuario@gmail.com" />
+            </div>
+        </div>
+
+        <div class="password">
+            <label for="password">Password</label>
+            <div class="sec-2">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input class="pas" type="password" id="password" placeholder="············" />
+                <ion-icon class="show-hide" name="eye-outline"></ion-icon>
+            </div>
+        </div>
+
+        <!-- Botón de inicio de sesión -->
+        <button class="login" id="login-button">Iniciar Sesión</button>
+
+        <!-- Contenedor para mensajes -->
+        <div id="message" style="text-align: center;"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- Asegúrate de vincular tu archivo JS -->
+</body>
+</html>
