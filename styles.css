@@ -1,0 +1,93 @@
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden; /* Elimina el desplazamiento vertical */
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background: #f1f7fe; /* Color de fondo */
+    height: 100vh; /* Altura de la ventana del navegador */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.screen-1 {
+    background: white; /* Color de fondo del contenedor */
+    padding: 2em; /* Espaciado interno */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    border-radius: 30px; /* Esquinas redondeadas */
+    box-shadow: 0 0 2em #e6e9f9; /* Sombra del contenedor */
+    gap: 2em; /* Espacio entre elementos internos */
+    width: 90vw; /* Usa un ancho relativo */
+    max-width: 400px; /* Ancho máximo */
+    min-height: 400px; /* Altura mínima para evitar que se colapse */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+
+/* Estilos del logotipo */
+.logo {
+    width: 100px; /* Ancho del logotipo */
+    height: 100px; /* Altura del logotipo */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; /* Asegura que el margen automático funcione */
+}
+
+/* Ajustes para entradas */
+.email, .password {
+    background: white; /* Color de fondo blanco */
+    box-shadow: 0 0 2em #e6e9f9; /* Sombra del contenedor */
+    padding: 1em; /* Espaciado interno */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    gap: 0.5em; /* Espacio entre elementos internos */
+    border-radius: 20px; /* Esquinas redondeadas */
+}
+
+.email input, .password input {
+    outline: none; /* Elimina el contorno predeterminado al enfocar */
+    border: none; /* Elimina el borde */
+}
+
+/* Estilo para el botón de inicio de sesión */
+.login {
+    padding: 1em; /* Espaciado interno */
+    background: #3e4684; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 30px; /* Esquinas redondeadas */
+    font-weight: 600; /* Peso de la fuente */
+}
+
+/* Estilos para el pie de página */
+.footer {
+    display: flex; /* Usa flexbox */
+    font-size: 0.7em; /* Tamaño de fuente */
+    color: #5e5e5e; /* Color del texto */
+    gap: 14em; /* Espacio entre elementos */
+    padding-bottom: 1em; /* Espaciado en la parte inferior */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .screen-1 {
+        padding: 1em; /* Ajusta el padding para pantallas pequeñas */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .screen-1 {
+        padding: 1.5em; /* Ajusta el padding para tabletas */
+    }
+}
+
+@media (min-width: 1025px) {
+    .screen-1 {
+        padding: 3em; /* Aumenta el padding para pantallas más grandes */
+        width: 50%; /* Ajusta el ancho en computadoras */
+    }
+}
